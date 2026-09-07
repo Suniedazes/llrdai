@@ -26,5 +26,11 @@
     "LLRD_AI_FREE_PLAN_CONFIRMED": "false",
     "LLRD_LOCAL_STUDIO": "false",
     "SITE_INDEXABLE": "false"
-  }
+  },
+  "routes": [
+    {
+      "pattern": "llrd.ai",
+      "custom_domain": true
+    }
+  ]
 }

@@ -1,3 +1,4 @@
+import {microsoftGraphDelivery} from '@/lib/microsoft-graph-delivery';
 import {deliverInquiry} from "@/lib/inquiry-delivery";
 import {limiter,clientKey} from "@/lib/website-ai/limits";
 import {contactDelivery} from "@/lib/contact-delivery";
@@ -21,5 +22,6 @@ export async function POST(request:Request){
  const {data,errors}=validateInquiry(raw);
  if(data.website)return reply("This request could not be accepted.",400);
  if(Object.keys(errors).length)return reply("Please check the highlighted fields.",422,{errors});
- try {const accepted=await deliverInquiry(data,null);return Response.json(accepted,{headers:{"Cache-Control":"no-store"}});} catch {return reply("Your inquiry has not been sent. Online delivery is currently unavailable. Your entries are still here so you can copy them and try again later.",503); }
+ try {const accepted=await deliverInquiry(data,microsoftGraphDelivery());return Response.json(accepted,{headers:{"Cache-Control":"no-store"}});} catch {return reply("Your inquiry has not been sent. Online delivery is currently unavailable. Your entries are still here so you can copy them and try again later.",503); }
 }
+
