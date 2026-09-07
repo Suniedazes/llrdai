@@ -31,7 +31,7 @@ export class SiteQuota extends DurableObject<Record<string,string>> {
    return result.allowed;
   });
  }
- async alarm(){await this.ctx.storage.delete('quota');}
+ async alarm(){await this.ctx.storage.transaction(async txn=>{const q=await txn.get<QuotaState>('quota');if(q&&q.day<Math.floor(Date.now()/86400000))await txn.delete('quota');});}
 }
 const worker = {
  async fetch(request:Request,env:{ASSETS:Fetcher;SITE_QUOTA:DurableObjectNamespace<SiteQuota>;LLRD_AI_ENABLED:string;LLRD_AI_TRUSTED_IP_HEADER:string;LLRD_AI_ACCEPTANCE_RUN?:string},ctx:ExecutionContext){
@@ -60,3 +60,4 @@ const worker = {
  }
 };
 export default worker;
+

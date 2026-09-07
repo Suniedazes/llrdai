@@ -1,0 +1,78 @@
+# LLRD production finishing master report — 2026-09-07
+
+## State and scope
+Existing public Worker llrdai / llrd.ai; deployment repository Suniedazes/llrdai, main. No new application, paid service, account credential, live AI activation or contact collection was created. SITE_INDEXABLE remains false. Production still runs its prior build: automated approval review rejected the push for this finishing pass. Local commit 7acdb90 contains the first safeguards; subsequent local finishing files are listed by git status. Do not mistake locally passing tests for deployed protection.
+
+## Master status
+| Area | Status | Evidence / remaining gate |
+|---|---|---|
+| Groq | BLOCKED | Secret binding name/type verified without retrieving value; provider groq and selected model verified. Live FREE_PLAN_CONFIRMED is false despite owner intent. Source now true. Live provider acceptance awaits authorized deployment. |
+| AI security | BLOCKED for activation | Server-only provider, fixed fact IDs, public-registry filter, output validation, no supplied URLs or generated prose, 600-character/4096-byte input, 180 output tokens, 12s timeout, one provider, no retries. Production deployment/acceptance pending. |
+| Shared rate limiting | BLOCKED for production; implemented locally | SQLite Durable Object per site/function, atomic persisted counters, AI 3/client/minute, 4/site/minute, 100/day UTC; contact 3/client/minute, 10/site/minute,100/day when collection is enabled. Missing binding or trusted IP fails closed. |
+| Contact code | READY for administrator configuration | Graph adapter and validation tested; no live send. Four fields plus honeypot; disabled UI and server collection gate. No contact data flows to Groq. |
+| Microsoft Graph | OWNER ACTION REQUIRED | Entra registration, mailbox-scoped send permission, credential configuration and receipt test. |
+| Email DNS | OWNER ACTION REQUIRED | MX/SPF present; DKIM, Autodiscover and Microsoft service CNAMEs incorrectly proxied. DMARC reporting address is admin@llrd.ai, not the single approved mailbox. |
+| Privacy | OWNER ACTION REQUIRED | Supplied legal package exists but final reconciliation with real vendors, retention and entity/effective date is pending. |
+| Cloudflare | READY for existing website; finishing deployment BLOCKED | Existing domain works. New quota binding and migration must deploy before AI can enable. |
+| Product links | AWAITING VERIFIED URLs | SONIE and ElseSide remain Coming Soon with requested stages. No guessed app/store destinations. |
+| Tests | PASS locally | Unit/regression tests, application and Worker typechecks, lint, build. Production dependency audit zero known advisories. See final verification count. |
+| Owner visual FAT | PENDING | Agent reviewed desktop/tablet/mobile and guided family flow; owner acceptance is separate. |
+| Site indexing | OFF | SITE_INDEXABLE=false. |
+
+## Implementation details and limits
+Quota storage contains a daily changing SHA-256 IP-derived identifier (pseudonymous, not anonymous), minute/day counters only. No prompts, inquiries or raw IP addresses are stored by the limiter. Minute client maps are bounded by the site cap; expired counters are cleared at the UTC-day alarm. No provider call occurs inside a storage transaction. This deliberately uses one coordination atom per site's low-volume AI/contact budget, not a high-throughput global application database. Limits may deny legitimate users behind a shared IP. HTTP flood volume can exhaust Cloudflare Free quotas and cause denial of service; it cannot authorize paid upgrades. Cloudflare Free SQLite Durable Objects fail when included limits are exceeded. No guarantee of protection against every abuse pattern.
+
+The Worker-native Durable Object entry cannot run in the vinext Node prerenderer. Removed that build-time prerender/CDN warmup configuration; the earlier build prerendered only one route. Static assets remain Cloudflare assets; HTML uses the Worker. Review actual Free Worker CPU/latency after deployment. Do not upgrade automatically.
+
+A bounded acceptance harness is prepared for the existing Worker: LLRD_AI_ACCEPTANCE_RUN=2026-09-finishing-v1 enables a once-only fixed four-prompt suite at /api/health/ai-acceptance. No query/body is accepted. Durable claim prevents repeated provider calls; the same global quota is consumed. It uses the installed secret internally without exposing it and does not enable the public endpoint. Reports contain only case names, validated IDs and pass/fail. Disable/remove the run flag after recording results. Its local result was blocked/configuration, as expected without a local secret. Live execution was not performed because deployment was rejected. Mock tests cover provider 429/failure, malformed/oversized/extra-key input, unknown output IDs, sensitive-input screening and disabled behavior. Not a claim of live Groq acceptance.
+
+Groq currently lists llama-3.1-8b-instant, supports text/JSON, and labels it Enterprise on the public model page. Do not infer free account entitlement from that page. Owner says the account is Free; test that installed credential before activation, with no paid fallback or model switch. FREE_PLAN_CONFIRMED is an application gate, not a billing control on Groq's account.
+
+CF-Connecting-IP is consumed at the Worker ingress; Origin is compared with the request URL, not a supplied Host override. Cloudflare's external ingress supplies the IP. Treat same-zone Worker integrations as trusted infrastructure; do not grant untrusted code authority to forward/alter requests within the zone. Missing IP/header configuration denies active AI.
+
+Graph only sends from/to contactus@llrd.ai. Visitor email is Reply-To, never a sender or recipient override. 202 plus Graph request-id is accepted-for-processing, not proof of inbox delivery; request-id is correlation, not message ID. No automatic retry on uncertain sends. Receipt/Sent Items/message trace test required. Current 10-second timeout is total for OAuth + send. No token/message content logging. No mailbox reading permission is needed. Server-side mailbox restrictions must also be enforced in Exchange, not just code.
+
+## Exact owner actions remaining
+1. **Authorize the blocked push/deployment in this task.** State approval to push the finishing commits to Suniedazes/llrdai main and deploy to existing llrdai on Cloudflare Free. This is an authorization, not a secret. Verification: Cloudflare deployment succeeds at the matching commit, SITE_QUOTA exists, AI remains off, and the fixed acceptance report passes. Agent can perform the technical deployment/testing afterward; no secret needs to be pasted.
+2. **Microsoft administrator registration and mailbox authorization.** Entra admin center → Identity → Applications → App registrations → New registration → name LLRD Website Contact; single tenant; no redirect URI for this server-only flow. Overview gives Directory (tenant) ID and Application (client) ID (nonsecret UUIDs). Enterprise applications → this application → Overview gives the service principal Object ID (different from App registrations Object ID). An Exchange administrator runs the scoped RBAC setup below. Grant only Application Mail.Send for contactus@llrd.ai. Do not also add an unscoped Entra Mail.Send application grant: permissions are additive and would defeat RBAC scope. Verify Test-ServicePrincipalAuthorization allows contactus and denies an unrelated mailbox.
+3. **Install the Graph credential privately.** Entra → App registrations → LLRD Website Contact → Certificates & secrets → New client secret. Choose a managed expiry/rotation schedule; copy its Value directly into Cloudflare → Workers & Pages → llrdai → Settings → Variables and Secrets → Add → Secret named MS_GRAPH_CLIENT_SECRET. Never use the Secret ID as its value, never paste the value in chat or Git. Add Text variables MS_GRAPH_TENANT_ID and MS_GRAPH_CLIENT_ID (UUIDs) and LLRD_CONTACT_PROVIDER=microsoft-graph. Sender and recipient are already fixed to contactus@llrd.ai; no extra mailbox or SMTP password is needed. Verification: controlled test after authorization in item 6; provider configuration alone must not open the form.
+4. **Correct and verify Microsoft DNS in Cloudflare.** llrd.ai → DNS → Records → Edit: set autodiscover, selector1._domainkey, selector2._domainkey, lyncdiscover, msoid and sip CNAMEs to DNS only (gray cloud), preserving their current Microsoft target strings. Keep the existing MX llrd-ai.mail.protection.outlook.com, SPF v=spf1 include:spf.protection.outlook.com -all, Microsoft verification TXT and SRV values. These are public DNS values, not secrets. Existing DMARC is v=DMARC1; p=quarantine; adkim=r; aspf=r; rua=mailto:admin@llrd.ai; change only rua to mailto:contactus@llrd.ai to use the approved mailbox; review report volume. Microsoft Defender → Email & collaboration → Policies & rules → Threat policies → Email authentication settings → DKIM: verify llrd.ai and enable signing only when both Microsoft-provided CNAMEs verify. Verify external send/receive, authentication-results SPF/DKIM/DMARC pass and Outlook Autodiscover. DNS inspection alone does not verify mailbox operation.
+5. **Approve the final privacy/legal reconciliation.** Have the owner/legal reviewer approve the installed policy against Cloudflare hosting/security/operational logs, pseudonymous quota storage, Groq prompt classification and Microsoft inquiry/Sent Items processing. Specify actual provider retention/settings, inquiry retention/deletion, rights/appeal handling via contactus, applicable jurisdictions and effective date. Latest instruction says LLRD.AI LLC while installed supplied package uses LLRD LLC: approve the exact legal entity wording throughout that package; source company metadata now follows latest instruction. No invented terms were added. Effective date October 12, 2026 is later than this review date. Resolve before activation. Confirm DMCA registration and Tennessee registered agent separately as previously required. Verification: approved exact text installed and vendor inventory agrees with reality.
+6. **Authorize and verify one controlled contact send, then final acceptance.** After items 2–5, authorize a synthetic test to contactus@llrd.ai; confirm receipt and reply handling in Outlook and admin message trace. No visitor inquiry should be used. Review llrd.ai on desktop/tablet/mobile, homepage, products, Find My App, contact/privacy requests, support, legal/security and 404. Approve capability activation and indexing only after all gates pass; no secret is involved. Agent runs provider/abuse tests and reports results before switches change.
+
+## Exchange administrator commands (review real IDs first)
+```powershell
+Connect-ExchangeOnline
+New-ServicePrincipal -AppId <APPLICATION_CLIENT_ID> -ObjectId <ENTERPRISE_APPLICATION_OBJECT_ID> -DisplayName 'LLRD Website Contact'
+New-ManagementScope -Name 'LLRD Contact Mailbox' -RecipientRestrictionFilter "PrimarySmtpAddress -eq 'contactus@llrd.ai'"
+New-ManagementRoleAssignment -Name 'LLRD Contact Send' -Role 'Application Mail.Send' -App <ENTERPRISE_APPLICATION_OBJECT_ID> -CustomResourceScope 'LLRD Contact Mailbox'
+Test-ServicePrincipalAuthorization -Identity <ENTERPRISE_APPLICATION_OBJECT_ID> -Resource contactus@llrd.ai
+```
+Test with a real different mailbox to prove denial. Angle-bracket values are nonsecret tenant IDs copied from the administrator portal, not literal commands. Administrator permission and propagation are required. No external account permission was granted by the agent.
+
+## Privacy-light inventory
+No advertising pixels, advertising tags, cross-site advertising tracking or provider analytics activated. Discovery uses a first-party sessionStorage frequency marker; choices remain component memory. Analytics adapter is opt-in/consent-gated and no external adapter is configured. Cloudflare platform security/operational logs and Microsoft/Groq processing are separate from advertising and must be documented. No uploads or authenticated product data are used. SONIE infrastructure remains separate.
+
+## Sources
+- https://developers.cloudflare.com/durable-objects/platform/pricing/ (Free SQLite support and hard quota failures)
+- https://console.groq.com/docs/model/llama-3.1-8b-instant (model remains listed; account entitlement must be tested)
+- https://learn.microsoft.com/en-us/graph/api/user-sendmail?view=graph-rest-1.0 (Mail.Send and 202 semantics)
+- https://learn.microsoft.com/en-us/entra/identity-platform/v2-oauth2-client-creds-grant-flow (server-only OAuth)
+- https://learn.microsoft.com/en-us/exchange/permissions-exo/application-rbac (mailbox-scoped permission and additive grants)
+
+READY TO ENABLE GROQ: NO
+READY TO ENABLE CONTACT: NO
+READY TO SET SITE_INDEXABLE=true: NO
+READY FOR PUBLIC PRODUCTION: NO (existing informational site is live; full activation gates remain).
+
+## Final verification and repository state
+Final local run: 46 tests PASS; application + Worker typechecks PASS; lint PASS; vinext production build PASS. npm audit --omit=dev reports zero known advisories. Client build search found no GROQ_API_KEY, MS_GRAPH_CLIENT_SECRET or api.groq.com references. Only .env.example is tracked; no real key values were retrieved, printed or added. Pattern checks found no common key/private-key signatures in tracked source; this is not a guarantee of exhaustive secret detection.
+
+Live HTTP checks: homepage, products, SONIE, ElseSide, contact, support, privacy, security, legal, updates, about, impact and privacy requests all 200; deliberately unknown route 404. Live HTML has noindex,nofollow. Cloudflare prepends search=yes / Allow:/ to robots.txt before the application's Disallow:/; page-level noindex remains in effect, but the owner should disable Cloudflare managed robots injection while indexing is off (Cloudflare zone → AI Crawl Control → Robots.txt settings; verify generated robots text no longer contains the conflicting Allow). This is public configuration, not a secret.
+
+Browser review: 390x844 mobile homepage and family guided flow; 768x1024 tablet products;1440x1000 desktop contact/products. No page horizontal overflow observed at checked widths. Family choice opens a different follow-up, SONIE recommendation explains match and all three channels are Coming Soon. Skip link, labeled controls, heading structure and dialog close controls present. Reduced-motion CSS and Earth matchMedia implementation reviewed in source; a full assistive-technology/OS reduced-motion acceptance test remains part of owner FAT. No claim of exhaustive accessibility certification.
+
+Found blank embedded SVG SONIE wordmark in discovery; extracted its exact supplied PNG bytes into wordmark.png and changed registry reference, with no logo redesign. Disabled contact form inputs/button while collection gate is false. These latest fixes and report remain local/uncommitted after approval rejection, along with worker alarm race protection and generated next-env.d.ts. First safeguard commit: 7acdb90. Production remains the earlier aaf5d16 build; do not activate it on the strength of these local results.
+
+## Explicit deployment authorization received
+Owner authorized remaining finishing commits, push to Suniedazes/llrdai main, existing Worker deployment, and controlled fixed-prompt acceptance. Prior push blocker is superseded by this explicit authorization. Public AI/contact/indexing remain OFF. Owner also explicitly requested Find My App publicly disabled; discoveryConfig.enabled and autoPrompt are now false and launch controls are disabled. Existing algorithm and registry remain intact. Microsoft DNS and legal package contents are not changed by this deployment.
