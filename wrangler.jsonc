@@ -1,0 +1,30 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "llrdai",
+  "compatibility_date": "2026-09-07",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "main": "vinext/server/fetch-handler",
+  "assets": {
+    "directory": "dist/client",
+    "not_found_handling": "none",
+    "binding": "ASSETS"
+  },
+  "cache": {
+    "enabled": true
+  },
+  "version_metadata": {
+    "binding": "CF_VERSION_METADATA"
+  },
+  "workers_dev": false,
+  "preview_urls": false,
+  "vars": {
+    "LLRD_AI_ENABLED": "false",
+    "LLRD_AI_PROVIDER": "groq",
+    "LLRD_AI_MODEL": "llama-3.1-8b-instant",
+    "LLRD_AI_FREE_PLAN_CONFIRMED": "false",
+    "LLRD_LOCAL_STUDIO": "false",
+    "SITE_INDEXABLE": "false"
+  }
+}

@@ -1,0 +1,3 @@
+export const navigation = [{label:"Home",href:"/"},{label:"Products",href:"/products"},{label:"Updates",href:"/updates"},{label:"About",href:"/about"},{label:"Impact",href:"/impact"}];
+export const trustLinks = [{label:"Privacy",href:"/privacy"},{label:"Your Privacy Choices",href:"/privacy-requests"},{label:"Security",href:"/security"},{label:"Terms",href:"/terms"},{label:"Cookies",href:"/cookies"},{label:"AI Policy",href:"/ai-policy"},{label:"Accessibility",href:"/accessibility"},{label:"State Privacy Rights",href:"/state-privacy-rights"},{label:"Legal Center",href:"/legal"}];
+export const footerLinks = [...navigation,{label:"Support",href:"/support"},{label:"Contact",href:"/contact"},...trustLinks];

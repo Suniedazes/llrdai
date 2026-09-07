@@ -1,0 +1,45 @@
+ M app/[page]/page.tsx
+ M app/campaigns/[slug]/page.tsx
+ M app/globals.css
+ M app/layout.tsx
+ M app/page.tsx
+ M app/products/[slug]/page.tsx
+ M app/products/page.tsx
+ M app/sitemap.ts
+ M components/Footer.tsx
+ M components/ProductCard.tsx
+ M components/ProductPlatformCTA.tsx
+ M components/TrackedLink.tsx
+ M content/navigation.ts
+ M content/products.ts
+ M lib/analytics.ts
+ M lib/attribution.ts
+ M lib/campaigns.ts
+ M lib/platforms.ts
+ M tests/routes.test.ts
+?? app/api/contact/
+?? app/api/discovery/
+?? app/contact/
+?? app/discovery.css
+?? components/AIDiscovery.tsx
+?? components/ContactInquiry.tsx
+?? components/DiscoveryChoices.tsx
+?? components/DiscoveryEntry.tsx
+?? components/DiscoveryRecommendations.tsx
+?? components/EarthCanvas.tsx
+?? components/ProductDiscovery.tsx
+?? content/discovery.ts
+?? docs/CONTACT_AND_AI.md
+?? docs/OWNER_INFORMATION_NEEDED.md
+?? docs/SMART_PRODUCT_DISCOVERY.md
+?? lib/contact.ts
+?? lib/discovery.ts
+?? lib/request-origin.ts
+?? public/brand/earth-sunrise/TEXTURES.md
+?? public/brand/earth-sunrise/earth-day.jpg
+?? public/brand/earth-sunrise/earth-night.png
+?? public/brand/elseside/
+?? public/brand/sonie/
+?? tests/ai-discovery.test.ts
+?? tests/contact.test.ts
+?? tests/discovery.test.ts

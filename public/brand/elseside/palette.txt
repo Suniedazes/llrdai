@@ -1,0 +1,46 @@
+ELSESIDE™ BRAND COLOR PALETTE Tagline: THERE’S ANOTHER WORLD RIGHT
+BESIDE YOURS.
+
+CORE BRAND COLORS
+
+ElseSide Midnight HEX: #06172B Role: Deep cosmic blue / primary dark
+
+Cosmic Blue HEX: #0B4EA2 Role: Main blue
+
+Electric Blue HEX: #149DFF Role: Bright blue illumination
+
+Portal Cyan HEX: #43D5F7 Role: Edge / rim lighting
+
+Transition Teal HEX: #12B9A6 Role: Blue-green transition
+
+Else Emerald HEX: #00B965 Role: Bright green energy
+
+Heritage Green HEX: #07543F Role: Deep green transition
+
+Antique Gold HEX: #C99A47 Role: Darker gold depth
+
+Champagne Gold HEX: #E8C078 Role: Primary gold
+
+Illuminated Champagne HEX: #F7E2B5 Role: Bright gold highlight
+
+Pearl White HEX: #F4F3EE Role: Wordmark / highlights
+
+ElseSide Black HEX: #020405 Role: Background
+
+SIGNATURE ELSESIDE GRADIENT
+
+#F7E2B5 → #E8C078 → #07543F → #00B965 → #12B9A6 → #43D5F7 → #0B4EA2 →
+#06172B
+
+Concept: Champagne/Gold → Heritage Green → Emerald → Teal → Cyan →
+Cosmic Blue → Midnight Blue
+
+The green is used primarily as transitional energy between the warm
+champagne/gold side and the deep cosmic-blue side rather than as the
+dominant color.
+
+RECOMMENDED CORE PALETTE
+
+#06172B ElseSide Midnight #07543F Heritage Green #00B965 Else Emerald
+#43D5F7 Portal Cyan #0B4EA2 Cosmic Blue #E8C078 Champagne Gold #F7E2B5
+Illuminated Champagne

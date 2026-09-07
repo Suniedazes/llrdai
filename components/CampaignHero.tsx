@@ -1,0 +1,3 @@
+import type {Campaign} from "@/content/campaigns";
+import {MediaPanel} from "./ui";
+export function CampaignHero({campaign}:{campaign:Campaign}){return <section className={"page-intro campaign-"+campaign.campaignTheme}><p className="eyebrow">{campaign.name}</p><h1>{campaign.headline}</h1><p className="lead">{campaign.subheadline}</p>{campaign.heroMedia&&<MediaPanel src={campaign.heroMedia} alt={campaign.headline}/>}</section>;}

@@ -1,0 +1,2 @@
+import {Button} from "@/components/ui";
+export default function NotFound(){return <div className="container"><section className="page-intro"><p className="eyebrow">PAGE NOT FOUND</p><h1>Let’s reconnect.</h1><p className="lead">This page isn’t available. Explore our products or return to LLRD.</p></section><div className="page-body link-row"><Button href="/">Return home</Button><Button href="/products" secondary>Explore products</Button></div></div>;}

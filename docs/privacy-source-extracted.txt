@@ -1,0 +1,1452 @@
+LLRDLEGAL & PRIVACY CENTER
+PUBLIC WEBSITE PACKAGE
+Publication-ready framework • September 7, 2026
+
+WELCOME TO THE LLRD LEGAL & PRIVACY CENTER
+
+Effective Date: October 12, 2026
+
+Last Updated: September 7, 2026
+
+LLRD (“LLRD,” “Company,” “we,” “us,” or “our”) develops and operates technology products, digital platforms, software, applications, artificial-intelligence-enabled services, websites, and related services.
+
+We believe responsible technology requires responsible treatment of people, information, security, intellectual property, and digital rights.
+
+This Legal & Privacy Center explains the policies governing the LLRD corporate website and, where expressly stated, other LLRD services.
+
+Individual LLRD products may have additional product-specific privacy notices, terms, consent requirements, community rules, or disclosures.
+
+Where a product-specific policy conflicts with this general corporate policy, the product-specific policy controls with respect to that product to the extent permitted by applicable law.
+
+The Legal & Privacy Center consists of:
+
+Privacy Policy
+U.S. State Privacy Rights Notice
+Cookie & Tracking Technologies Policy
+Terms of Use
+Acceptable Use Policy
+AI & Automated Systems Policy
+Children's Privacy Framework
+Sensitive, Genetic, Biometric & Health Data Policy
+User-Generated Content Policy
+Security & Responsible Disclosure Policy
+Intellectual Property Policy
+Accessibility Statement
+Third-Party Services & Integrations Policy
+Legal & Professional Advice Disclaimer
+Product Availability & Beta Services Disclaimer
+Privacy Rights Request Procedures
+Contact & Legal Notices
+
+────────────────────────────────────────
+
+PART I — PRIVACY POLICY
+
+1. Scope
+
+This Privacy Policy describes how LLRD may collect, use, disclose, protect, retain, and otherwise process personal information when individuals interact with our corporate website or other services that expressly link to this Privacy Policy.
+
+This policy does not necessarily describe every processing activity of every LLRD product.
+
+Products that process materially different categories of information should provide supplemental privacy notices.
+
+────────────────────────────────────────
+
+2. PERSONAL INFORMATION
+
+“Personal information” generally means information that identifies, relates to, describes, is reasonably capable of being associated with, or could reasonably be linked to an identified or identifiable individual, subject to definitions and exceptions under applicable law.
+
+Information that has been lawfully de-identified, aggregated, or anonymized so that it cannot reasonably be associated with an identifiable individual may not constitute personal information under applicable law.
+
+────────────────────────────────────────
+
+3. INFORMATION YOU PROVIDE TO US
+
+Depending on your interaction with LLRD, we may collect:
+
+Identity Information
+
+name;
+username;
+account identifier;
+profile name;
+date of birth where necessary;
+age or age range where necessary; and
+other identifying information.
+
+Contact Information
+
+email address;
+telephone number;
+mailing address;
+business address; and
+communication preferences.
+
+Professional Information
+
+company;
+employer;
+job title;
+professional role;
+industry; and
+business interests.
+
+Account Information
+
+account identifiers;
+authentication information;
+account status;
+permissions;
+user roles;
+account preferences; and
+security settings.
+
+Communications
+
+We may retain communications submitted through:
+
+contact forms;
+support requests;
+emails;
+surveys;
+feedback mechanisms;
+business inquiries; and
+other communications.
+
+User-Submitted Information
+
+Depending upon the particular service, users may voluntarily submit:
+
+text;
+photographs;
+documents;
+audio;
+video;
+family information;
+stories;
+records;
+profile information;
+files;
+application content; or
+other materials.
+
+Product-specific notices should explain the information collected by each product.
+
+────────────────────────────────────────
+
+4. INFORMATION COLLECTED AUTOMATICALLY
+
+When you use an LLRD website or service, we may automatically receive information such as:
+
+IP address;
+browser type;
+browser language;
+operating system;
+device type;
+device identifiers where permitted;
+referring page;
+pages viewed;
+links selected;
+approximate geographic area;
+access date and time;
+session information;
+error logs;
+diagnostic information;
+performance information;
+security events; and
+cookie or similar identifiers.
+
+We may use this information to operate, secure, diagnose, maintain, and improve our services.
+
+────────────────────────────────────────
+
+5. INFORMATION FROM THIRD PARTIES
+
+Where permitted, LLRD may receive information from:
+
+service providers;
+authentication providers;
+business partners;
+integration partners;
+public sources;
+customers;
+authorized users;
+application programming interfaces;
+connected services; or
+other persons who are authorized to provide information.
+
+Receiving information from another source does not automatically authorize LLRD to use it for unrelated purposes.
+
+────────────────────────────────────────
+
+6. HOW WE USE PERSONAL INFORMATION
+
+LLRD may use information to:
+
+provide requested services;
+operate our website;
+administer accounts;
+authenticate users;
+manage permissions;
+communicate with users;
+provide technical support;
+answer inquiries;
+process authorized transactions;
+maintain service functionality;
+diagnose errors;
+prevent fraud;
+investigate misuse;
+protect accounts;
+secure infrastructure;
+improve performance;
+develop products;
+conduct permitted analytics;
+maintain records;
+comply with contractual obligations;
+comply with legal obligations;
+investigate legal claims;
+enforce our agreements;
+protect LLRD's rights;
+protect users and third parties; and
+accomplish other purposes disclosed when information is collected.
+
+────────────────────────────────────────
+
+7. PRIVACY BY DESIGN
+
+LLRD's goal is to incorporate privacy considerations into the design and development of our products.
+
+Our privacy principles include:
+
+Purpose limitation.
+Collect information for identifiable purposes.
+
+Data minimization.
+Avoid collecting information merely because technology makes collection possible.
+
+Access limitation.
+Restrict access according to legitimate operational needs.
+
+Retention limitation.
+Avoid indefinite retention without a legitimate reason.
+
+Security.
+Use safeguards proportionate to the sensitivity and risks associated with the information.
+
+Transparency.
+Explain significant uses of information.
+
+User control.
+Provide reasonable controls and legally required privacy rights.
+
+────────────────────────────────────────
+
+8. LEGAL BASES AND PERMITTED PROCESSING
+
+Depending upon the jurisdiction and processing activity, LLRD may process information based upon:
+
+user consent;
+performance of a contract;
+steps requested before entering a contract;
+legitimate business purposes;
+compliance with legal obligations;
+protection of security or legal rights;
+protection of individuals; or
+another lawful basis.
+
+Where consent is legally required, LLRD will seek appropriate consent.
+
+────────────────────────────────────────
+
+9. DISCLOSURE OF INFORMATION
+
+LLRD may disclose personal information where reasonably necessary to:
+
+cloud providers;
+hosting providers;
+authentication providers;
+cybersecurity providers;
+communications providers;
+payment providers;
+analytics providers;
+customer-support providers;
+contractors;
+professional advisers;
+auditors;
+insurers;
+corporate transaction participants;
+regulators;
+courts;
+law-enforcement agencies; or
+other parties where authorized or legally required.
+
+Service providers should be authorized to process information only for legitimate purposes associated with the services they provide to LLRD, subject to applicable contractual and legal requirements.
+
+────────────────────────────────────────
+
+10. WE DO NOT SELL PERSONAL INFORMATION AS OUR BUSINESS MODEL
+
+LLRD's business model is not based on selling identifiable user information to data brokers.
+
+If our practices materially change, we will update our disclosures and provide legally required choices.
+
+Some privacy laws define “sale,” “sharing,” or similar concepts more broadly than an ordinary monetary sale. Where those laws apply, LLRD will provide any notices and opt-out mechanisms legally required.
+
+────────────────────────────────────────
+
+11. TARGETED ADVERTISING
+
+LLRD will disclose if a service uses personal information for targeted advertising as defined under applicable privacy law.
+
+Where applicable law gives users a right to opt out, LLRD will provide an appropriate mechanism.
+
+────────────────────────────────────────
+
+12. PROFILING
+
+LLRD may use automated technologies for functions such as:
+
+recommendations;
+fraud detection;
+content organization;
+search;
+personalization;
+product discovery; and
+security.
+
+Where legally required, qualifying users will be provided an opportunity to opt out of profiling used in furtherance of decisions producing legal or similarly significant effects.
+
+────────────────────────────────────────
+
+13. DATA RETENTION
+
+We retain personal information for periods reasonably necessary to:
+
+provide services;
+maintain accounts;
+fulfill the purpose for which information was collected;
+satisfy contractual obligations;
+satisfy legal requirements;
+maintain appropriate business records;
+resolve disputes;
+detect fraud;
+maintain security;
+enforce agreements; and
+protect legal rights.
+
+Retention periods may vary by product and category of information.
+
+At the end of an appropriate retention period, information may be deleted, destroyed, anonymized, aggregated, or de-identified, subject to legal and technical limitations.
+
+────────────────────────────────────────
+
+14. INFORMATION SECURITY
+
+LLRD seeks to maintain administrative, technical, physical, and organizational safeguards appropriate to the nature of the information and associated risks.
+
+Depending upon the system, controls may include:
+
+encryption in transit;
+encryption at rest where appropriate;
+secure authentication;
+role-based access controls;
+least-privilege principles;
+credential protection;
+system logging;
+security monitoring;
+backups;
+vulnerability management;
+secure software-development practices;
+dependency management;
+incident response;
+vendor assessment;
+environment separation;
+data minimization; and
+workforce access restrictions.
+
+No Internet-connected service can guarantee absolute security.
+
+Users should protect their passwords and immediately report suspected unauthorized account activity.
+
+────────────────────────────────────────
+
+15. INTERNATIONAL PROCESSING
+
+LLRD is based in the United States.
+
+Some technology vendors or infrastructure providers may process information in other jurisdictions.
+
+Where applicable, LLRD will implement legally required mechanisms and appropriate safeguards for international transfers.
+
+────────────────────────────────────────
+
+PART II — U.S. STATE PRIVACY RIGHTS
+
+16. TENNESSEE PRIVACY
+
+LLRD is organized in Tennessee and intends to maintain privacy practices consistent with applicable Tennessee requirements.
+
+The Tennessee Information Protection Act (“TIPA”) applies only when its statutory applicability requirements and thresholds are satisfied. Among other requirements, the Act generally applies to persons conducting business in Tennessee or producing products or services targeted to Tennessee residents that exceed the statutory revenue threshold and meet specified consumer-data processing thresholds. LLRD's organization or location in Tennessee, by itself, does not mean that TIPA applies to every LLRD activity.
+
+Where TIPA applies, qualifying Tennessee consumers may have rights that include the ability to:
+
+confirm whether personal information is being processed;
+access personal information;
+correct inaccuracies;
+request deletion;
+obtain certain information in a portable format;
+opt out of qualifying sales of personal information;
+opt out of targeted advertising;
+opt out of certain profiling; and
+appeal certain decisions concerning privacy requests.
+
+LLRD may voluntarily provide some privacy controls even where a particular statutory threshold has not been met. The availability of a voluntary control does not constitute a representation that a particular privacy statute applies to LLRD or to a particular processing activity.
+
+────────────────────────────────────────
+
+17. OTHER U.S. STATES
+
+Residents of other U.S. states may possess additional rights under applicable state privacy laws.
+
+Depending upon jurisdiction and applicability, these may include rights concerning:
+
+access;
+correction;
+deletion;
+portability;
+disclosure;
+consent;
+sensitive information;
+targeted advertising;
+sale or sharing;
+profiling;
+automated decision-making;
+appeals; and
+non-discrimination for exercising privacy rights.
+
+LLRD will honor applicable statutory rights where required.
+
+────────────────────────────────────────
+
+18. PRIVACY REQUESTS
+
+Requests may be submitted through:
+
+Privacy Request Form: [URL]
+Email: privacy@llrd.ai
+
+We may need to authenticate your identity.
+
+We may also need to verify that an authorized agent has authority to act for another individual.
+
+We will respond within time periods required by applicable law.
+
+────────────────────────────────────────
+
+19. APPEALS
+
+Where applicable privacy law provides a right to appeal a denied privacy request, users may submit an appeal through:
+
+[PRIVACY APPEAL URL/EMAIL]
+
+The appeal should identify the original request and explain why reconsideration is requested.
+
+────────────────────────────────────────
+
+20. NON-DISCRIMINATION
+
+LLRD will not unlawfully discriminate against an individual for exercising privacy rights provided by applicable law.
+
+────────────────────────────────────────
+
+PART III — COOKIE & TRACKING TECHNOLOGIES POLICY
+
+21. COOKIES
+
+LLRD websites may use cookies, local storage, pixels, SDKs, and similar technologies.
+
+These technologies may support:
+
+Strictly Necessary Functions
+
+Including:
+
+authentication;
+security;
+session management;
+fraud prevention; and
+basic website operation.
+
+Functional Technologies
+
+These may remember:
+
+preferences;
+interface settings; and
+other user choices.
+
+Analytics Technologies
+
+These may help LLRD understand:
+
+traffic;
+website performance;
+errors;
+navigation patterns; and
+feature usage.
+
+Advertising Technologies
+
+LLRD will identify and provide legally required controls if advertising or cross-context behavioral tracking technologies are introduced.
+
+────────────────────────────────────────
+
+22. COOKIE CHOICES
+
+Where legally required, users will be provided with controls for non-essential cookies.
+
+Users may also control certain technologies through browser or device settings.
+
+Disabling certain technologies may affect functionality.
+
+────────────────────────────────────────
+
+PART IV — TERMS OF USE
+
+23. ACCEPTANCE
+
+By accessing the LLRD corporate website or a service that expressly incorporates these Terms, you agree to these Terms.
+
+If you do not agree, do not use the applicable service.
+
+────────────────────────────────────────
+
+24. ELIGIBILITY
+
+You must possess legal capacity to enter an agreement or use the service through an authorized parent, guardian, organization, or other legally permitted arrangement.
+
+Individual products may impose additional age requirements.
+
+────────────────────────────────────────
+
+25. ACCOUNTS
+
+Where accounts are available, you agree to:
+
+provide accurate information;
+maintain appropriate account security;
+protect authentication credentials;
+refrain from sharing credentials where prohibited;
+promptly report suspected compromise; and
+use only accounts you are authorized to use.
+
+────────────────────────────────────────
+
+26. SERVICE CHANGES
+
+Technology changes.
+
+LLRD may modify, improve, add, discontinue, suspend, or replace features.
+
+Where contractual commitments require advance notice, LLRD will provide notice as required.
+
+────────────────────────────────────────
+
+27. NO GUARANTEE OF CONTINUOUS AVAILABILITY
+
+LLRD does not guarantee that every website, feature, application, integration, or service will operate continuously or without interruption.
+
+Services may be affected by:
+
+maintenance;
+updates;
+Internet failures;
+third-party services;
+security events;
+technical failures; or
+circumstances outside LLRD's reasonable control.
+
+────────────────────────────────────────
+
+28. TERMINATION AND SUSPENSION
+
+LLRD may restrict or suspend access where reasonably necessary because of:
+
+material Terms violations;
+fraud;
+security threats;
+unlawful conduct;
+abuse;
+unauthorized access;
+nonpayment where applicable; or
+legal requirements.
+
+Where reasonable and legally required, notice may be provided.
+
+────────────────────────────────────────
+
+PART V — ACCEPTABLE USE POLICY
+
+29. PROHIBITED ACTIVITIES
+
+Users may not:
+
+violate applicable law;
+commit fraud;
+impersonate another person;
+misrepresent authority;
+obtain unauthorized access;
+bypass security;
+defeat access controls;
+distribute malware;
+introduce malicious code;
+conduct unauthorized vulnerability scanning;
+attack infrastructure;
+interfere with service availability;
+conduct credential attacks;
+harvest credentials;
+unlawfully scrape personal information;
+distribute unlawful spam;
+engage in phishing;
+exploit children;
+harass or threaten others;
+violate intellectual-property rights;
+upload content they have no right to provide;
+misuse another person's confidential information;
+use LLRD services to facilitate unlawful conduct; or
+encourage others to engage in prohibited activity.
+
+────────────────────────────────────────
+
+30. AUTOMATED ACCESS
+
+Bots, crawlers, automated extraction tools, or automated agents may not access restricted portions of LLRD systems without authorization.
+
+Public search-engine indexing may be permitted where technically authorized.
+
+────────────────────────────────────────
+
+PART VI — AI & AUTOMATED SYSTEMS POLICY
+
+31. ARTIFICIAL INTELLIGENCE
+
+Certain LLRD products may incorporate:
+
+generative AI;
+machine learning;
+conversational AI;
+recommendation systems;
+automated search;
+classification;
+summarization;
+content generation;
+intelligent assistance; or
+other automated technologies.
+
+────────────────────────────────────────
+
+32. AI TRANSPARENCY
+
+Where reasonably appropriate, LLRD will identify when a user is interacting with or receiving material generated by an AI system.
+
+AI-generated content may be inaccurate.
+
+Users should independently verify information when accuracy is important.
+
+────────────────────────────────────────
+
+33. HUMAN JUDGMENT
+
+AI output should not automatically replace appropriate professional or human judgment.
+
+Unless a product has specifically been designed, validated, legally authorized, and disclosed for such use, LLRD AI should not be treated as the sole basis for significant decisions involving:
+
+health;
+diagnosis;
+treatment;
+employment;
+credit;
+insurance;
+housing;
+legal rights;
+government benefits;
+educational admission; or
+other similarly significant matters.
+
+────────────────────────────────────────
+
+34. AI INPUT
+
+Users should not submit information into an AI tool that they lack authority to disclose.
+
+Highly sensitive, confidential, privileged, proprietary, regulated, or protected information should only be entered where the applicable service expressly supports such information.
+
+────────────────────────────────────────
+
+35. AI TRAINING
+
+LLRD will not state that user information is excluded from model training unless the relevant architecture and contractual arrangements support that representation.
+
+Product-specific notices will identify material AI data practices where appropriate.
+
+────────────────────────────────────────
+
+36. THIRD-PARTY AI MODELS
+
+LLRD products may use AI services provided by third parties.
+
+When third-party models are used, information may be transmitted to those providers subject to applicable contracts, technical controls, and privacy requirements.
+
+LLRD will seek to select and configure providers consistent with the sensitivity of the relevant information.
+
+────────────────────────────────────────
+
+37. AI SAFETY
+
+LLRD may implement safeguards intended to prevent AI systems from being used for:
+
+unlawful activity;
+fraud;
+exploitation;
+harmful impersonation;
+privacy violations;
+malicious cyber activity; or
+other prohibited uses.
+
+────────────────────────────────────────
+
+PART VII — CHILDREN'S PRIVACY FRAMEWORK
+
+38. CHILDREN
+
+Some LLRD products may be designed for families or may contain information relating to children.
+
+The corporate website itself is not intended to solicit personal information directly from children under 13 unless expressly stated.
+
+────────────────────────────────────────
+
+39. CHILDREN UNDER 13
+
+Where an LLRD online service is directed to children under 13, or LLRD knowingly collects personal information online from a child under 13 in circumstances governed by the Children's Online Privacy Protection Act (“COPPA”), LLRD will implement applicable COPPA requirements.
+
+These may include:
+
+appropriate parental notice;
+verifiable parental consent where required;
+limits on collection, use, retention, and disclosure;
+separate parental authorization where legally required for disclosures to third parties;
+parental access and review mechanisms;
+correction or deletion mechanisms;
+reasonable security protections;
+data-minimization and retention controls; and
+restrictions on advertising, profiling, or other uses of children's information where required by law.
+
+Product-specific notices will explain the age rules and parental controls applicable to the relevant service.
+
+────────────────────────────────────────
+
+40. FAMILY-SUBMITTED INFORMATION ABOUT CHILDREN
+
+A distinction exists between a child directly using a service and an authorized adult submitting family information that relates to a child.
+
+Product-specific notices will address these circumstances as appropriate.
+
+────────────────────────────────────────
+
+41. SAFETY OF MINORS
+
+LLRD prohibits use of its platforms to exploit, groom, endanger, sexually exploit, traffic, threaten, or otherwise unlawfully harm minors.
+
+LLRD may report suspected child exploitation as required or permitted by law.
+
+────────────────────────────────────────
+
+PART VIII — SENSITIVE, GENETIC, BIOMETRIC & HEALTH DATA
+
+42. SENSITIVE INFORMATION
+
+Certain LLRD products may process information that warrants heightened protection.
+
+Depending upon the product, this could include:
+
+precise location;
+government identifiers;
+financial information;
+racial or ethnic origin;
+religious information;
+sexual-orientation information;
+citizenship or immigration information;
+health information;
+genetic information;
+biometric identifiers;
+information concerning children; or
+other information classified as sensitive under applicable law.
+
+LLRD will provide additional notices and obtain consent where required.
+
+────────────────────────────────────────
+
+43. GENETIC AND GENEALOGICAL INFORMATION
+
+A genealogy or family-history service may involve information about:
+
+biological relationships;
+family relationships;
+ancestry;
+ethnicity;
+historical records;
+family medical history;
+inherited characteristics; or
+genetic information if a future feature expressly supports such information.
+
+Genealogical information can reveal information not only about the individual who submitted it but also about biological relatives.
+
+Accordingly, LLRD will seek to apply heightened safeguards to sensitive genealogical and genetic information.
+
+LLRD should not accept raw DNA data unless a specific product feature, privacy notice, security model, retention policy, and consent process have been established for that purpose.
+
+────────────────────────────────────────
+
+44. BIOMETRIC INFORMATION
+
+LLRD will not treat an ordinary photograph as a biometric identifier merely because it depicts a face.
+
+If LLRD introduces facial recognition, voiceprints, fingerprints, iris scans, or another technology designed to identify individuals through biometric characteristics, the applicable product will provide appropriate notice and consent mechanisms required by applicable law.
+
+────────────────────────────────────────
+
+45. HEALTH INFORMATION
+
+An LLRD product may permit users to store, organize, understand, connect, or manage health-related information.
+
+Health information may be subject to different laws depending upon:
+
+who collected it;
+why it was collected;
+the relationship between the parties;
+the jurisdiction;
+whether an organization is a HIPAA covered entity;
+whether LLRD acts as a business associate;
+whether the Federal Trade Commission's Health Breach Notification Rule applies;
+whether state consumer-health-data or privacy laws apply; and
+other legal circumstances.
+
+LLRD will not represent that all health information is “HIPAA protected.” Product-specific health notices will describe material privacy practices and legally required rights applicable to the relevant product.
+
+────────────────────────────────────────
+
+46. HIPAA AND CONSUMER HEALTH DATA
+
+HIPAA applies to covered entities and certain business associates.
+
+If LLRD enters a relationship in which it legally becomes a business associate, LLRD will implement the applicable contractual, privacy, security, and breach-notification requirements associated with that role.
+
+Where required, an appropriate Business Associate Agreement will be executed.
+
+A consumer application handling health information is not necessarily subject to HIPAA merely because the information concerns health. Consumer health applications outside HIPAA may nevertheless be subject to the Federal Trade Commission Act, the FTC Health Breach Notification Rule, state privacy or consumer-health-data laws, and other applicable requirements.
+
+Where the FTC Health Breach Notification Rule applies, LLRD will provide legally required notifications following a qualifying breach of unsecured personal health record information.
+
+────────────────────────────────────────
+
+PART IX — USER-GENERATED CONTENT POLICY
+
+47. OWNERSHIP
+
+Users retain ownership rights they lawfully possess in content they submit unless applicable product terms expressly provide otherwise.
+
+LLRD does not acquire ownership of a user's family photographs, stories, documents, or similar materials merely because they are uploaded.
+
+────────────────────────────────────────
+
+48. LICENSE NECESSARY TO OPERATE THE SERVICE
+
+By submitting content, users grant LLRD a limited license to host, store, reproduce, process, transmit, display, back up, and otherwise handle that content as reasonably necessary to operate the service.
+
+Product-specific terms may define this license more precisely.
+
+────────────────────────────────────────
+
+49. AUTHORITY TO UPLOAD
+
+Users represent that they possess appropriate rights or authorization to submit content.
+
+Uploading a photograph or document does not automatically establish ownership.
+
+────────────────────────────────────────
+
+50. CONTENT CONCERNING OTHER PEOPLE
+
+Users should consider the privacy and rights of living individuals before uploading information about them.
+
+LLRD may establish additional controls for living persons, minors, sensitive family information, medical information, and private records.
+
+────────────────────────────────────────
+
+51. CONTENT REMOVAL
+
+LLRD may remove or restrict content where reasonably necessary because it:
+
+violates law;
+infringes rights;
+creates a security risk;
+violates product rules;
+unlawfully exposes personal information;
+exploits minors; or
+otherwise materially violates applicable Terms.
+
+────────────────────────────────────────
+
+PART X — SECURITY & RESPONSIBLE DISCLOSURE
+
+52. SECURITY COMMITMENT
+
+LLRD considers security a shared responsibility across product design, development, infrastructure, vendors, operations, and users.
+
+────────────────────────────────────────
+
+53. REPORTING A VULNERABILITY
+
+Security researchers who believe they have identified a vulnerability should contact:
+
+[SECURITY\@LLRD DOMAIN]
+
+Please include:
+
+affected service;
+description;
+reproduction steps;
+potential impact; and
+relevant technical information.
+
+────────────────────────────────────────
+
+54. RESPONSIBLE RESEARCH
+
+Researchers must not:
+
+access unnecessary personal information;
+modify user information;
+destroy information;
+disrupt services;
+install malware;
+conduct extortion;
+publicly disclose exploitable vulnerabilities before reasonable remediation; or
+exceed what is reasonably necessary to demonstrate the vulnerability.
+
+LLRD encourages good-faith responsible disclosure.
+
+────────────────────────────────────────
+
+55. SECURITY INCIDENTS
+
+LLRD will investigate suspected security incidents.
+
+Where applicable law requires notification, LLRD will provide legally required notifications to affected individuals, regulators, customers, or other appropriate parties within the time and by the method required by applicable law. Different notification requirements may apply depending on the affected individuals, jurisdiction, type of information, and product involved.
+
+────────────────────────────────────────
+
+PART XI — INTELLECTUAL PROPERTY
+
+56. LLRD PROPERTY
+
+Unless otherwise stated, LLRD or its licensors own applicable rights in original:
+
+software;
+source code;
+interfaces;
+graphics;
+logos;
+designs;
+text;
+documentation;
+product names;
+trademarks;
+databases;
+workflows;
+audiovisual material; and
+other proprietary material.
+
+────────────────────────────────────────
+
+57. LIMITED PERMISSION
+
+Public website materials may be viewed for lawful informational purposes.
+
+No ownership rights are transferred.
+
+────────────────────────────────────────
+
+58. TRADEMARKS
+
+LLRD company and product names, logos, marks, slogans, and distinctive brand elements may constitute trademarks or proprietary brand assets.
+
+Third-party trademarks remain the property of their respective owners.
+
+References to third-party companies do not automatically imply affiliation, sponsorship, endorsement, or partnership.
+
+────────────────────────────────────────
+
+59. COPYRIGHT AND DMCA COMPLAINTS
+
+LLRD respects intellectual-property rights. Persons who believe material hosted by LLRD infringes their copyright may submit a notice to LLRD's designated copyright contact:
+
+Copyright/DMCA Agent: Copyright Agent, LLRD LLC
+Email: privacy@llrd.ai
+Address: 1109 Woodland St, Unit 60552, Nashville, TN 37206, United States
+
+A copyright notice should include the information required by applicable law, including sufficient information to identify the copyrighted work, the allegedly infringing material and its location, the complaining party's contact information, a statement of good-faith belief, a statement regarding the accuracy and authority of the complaining party, and an appropriate physical or electronic signature.
+
+Where LLRD qualifies for and elects to rely upon applicable Digital Millennium Copyright Act safe-harbor provisions, LLRD will maintain the required designated-agent information with the U.S. Copyright Office and make the required contact information publicly available.
+
+LLRD may remove or restrict access to material in response to a valid notice and may request additional information necessary to evaluate a complaint. Where applicable, users may have rights to submit a counter-notification under the DMCA.
+
+────────────────────────────────────────
+
+PART XII — ACCESSIBILITY
+
+60. ACCESSIBILITY COMMITMENT
+
+LLRD seeks to make its public digital experiences usable by people with disabilities.
+
+Our accessibility efforts may include consideration of:
+
+keyboard navigation;
+text alternatives;
+semantic structure;
+readable typography;
+color contrast;
+focus indicators;
+responsive layouts;
+reduced-motion preferences; and
+compatibility with commonly used assistive technologies.
+
+────────────────────────────────────────
+
+61. ACCESSIBILITY FEEDBACK
+
+If you experience difficulty using an LLRD digital service, contact:
+
+privacy@llrd.ai
+
+Please identify:
+
+the page or feature;
+the difficulty encountered;
+assistive technology used, if relevant; and
+preferred method of response.
+
+LLRD will make reasonable efforts to investigate reported barriers.
+
+────────────────────────────────────────
+
+PART XIII — THIRD-PARTY SERVICES & INTEGRATIONS
+
+62. THIRD-PARTY TECHNOLOGY
+
+LLRD services may integrate with:
+
+cloud providers;
+authentication providers;
+AI providers;
+payment services;
+mapping services;
+communications services;
+analytics systems;
+APIs;
+app stores; and
+other external platforms.
+
+────────────────────────────────────────
+
+63. EXTERNAL LINKS
+
+Links to external websites are provided for convenience or functionality.
+
+Unless expressly stated, LLRD does not control third-party websites and is not responsible for their independent content, security, availability, or privacy practices.
+
+────────────────────────────────────────
+
+64. CONNECTED ACCOUNTS
+
+If a user chooses to connect an external account, the information exchanged will depend upon:
+
+user authorization;
+integration configuration;
+provider permissions; and
+applicable product functionality.
+
+Users may need to manage some permissions through the third-party provider.
+
+────────────────────────────────────────
+
+PART XIV — LEGAL & PROFESSIONAL ADVICE DISCLAIMER
+
+65. GENERAL INFORMATION
+
+Information made available through LLRD's corporate website is provided for general informational purposes.
+
+Unless expressly agreed otherwise in writing, it does not constitute:
+
+legal advice;
+medical advice;
+diagnosis;
+treatment;
+financial advice;
+investment advice;
+tax advice; or
+other regulated professional advice.
+
+────────────────────────────────────────
+
+66. HEALTH INFORMATION DISCLAIMER
+
+Health-related technology or informational content should not be used as a substitute for qualified professional medical care.
+
+Users experiencing a medical emergency should contact appropriate emergency services rather than relying on an LLRD application.
+
+────────────────────────────────────────
+
+67. AI DISCLAIMER
+
+AI-generated content may contain errors, omissions, or fabricated information.
+
+Material decisions should not be based solely on AI-generated output without appropriate verification.
+
+────────────────────────────────────────
+
+PART XV — PRODUCT AVAILABILITY & BETA SERVICES
+
+68. DEVELOPMENT-STAGE PRODUCTS
+
+LLRD may display products that are:
+
+concepts;
+prototypes;
+pilots;
+previews;
+betas;
+limited releases;
+under development; or
+not yet publicly available.
+
+The website should identify product status accurately.
+
+────────────────────────────────────────
+
+69. NO PROMISE OF FUTURE RELEASE
+
+A description, prototype, demonstration, roadmap, screenshot, or preview does not constitute a binding commitment that a product or feature will be released.
+
+Product direction may change.
+
+────────────────────────────────────────
+
+70. BETA RISKS
+
+Preview or beta software may:
+
+contain defects;
+change without notice;
+experience downtime;
+provide incomplete functionality; or
+lose compatibility with other systems.
+
+Additional beta terms may apply.
+
+────────────────────────────────────────
+
+PART XVI — WARRANTIES AND LIABILITY
+
+71. DISCLAIMER OF WARRANTIES
+
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE LLRD CORPORATE WEBSITE AND GENERAL PUBLIC WEBSITE CONTENT ARE PROVIDED “AS IS” AND “AS AVAILABLE.”
+
+LLRD DISCLAIMS WARRANTIES TO THE EXTENT PERMITTED BY LAW, INCLUDING IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.
+
+NOTHING IN THESE TERMS EXCLUDES A WARRANTY OR RIGHT THAT CANNOT LAWFULLY BE EXCLUDED.
+
+────────────────────────────────────────
+
+72. LIMITATION OF LIABILITY
+
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, LLRD WILL NOT BE LIABLE FOR INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, CONSEQUENTIAL, OR PUNITIVE DAMAGES ARISING SOLELY FROM USE OF THE CORPORATE WEBSITE.
+
+PRODUCT-SPECIFIC CONTRACTS MAY CONTAIN DIFFERENT LIABILITY PROVISIONS.
+
+NOTHING HERE LIMITS LIABILITY THAT CANNOT LAWFULLY BE LIMITED.
+
+────────────────────────────────────────
+
+73. INDEMNIFICATION
+
+To the extent permitted by law, users may be responsible for claims arising from their unlawful use of LLRD services, violation of applicable Terms, or infringement of third-party rights.
+
+Consumer-specific product terms should be separately reviewed before applying any broader indemnification obligation to consumers.
+
+────────────────────────────────────────
+
+PART XVII — GOVERNING LAW & DISPUTES
+
+74. TENNESSEE LAW
+
+Except where applicable law requires otherwise, these corporate Website Terms are governed by the laws of the State of Tennessee and applicable federal law of the United States, without regard to conflict-of-law principles.
+
+────────────────────────────────────────
+
+75. DISPUTES
+
+LLRD encourages users to contact us before initiating formal proceedings so that concerns can potentially be resolved informally.
+
+Legal Contact: privacy@llrd.ai
+
+Nothing in this provision prevents either party from exercising rights that cannot legally be waived.
+
+────────────────────────────────────────
+
+76. NO AUTOMATIC ARBITRATION CLAUSE
+
+LLRD's general corporate Website Terms do not impose mandatory consumer arbitration or a class-action waiver unless such provisions are separately adopted and clearly disclosed.
+
+Individual commercial or product agreements may contain separate dispute-resolution provisions.
+
+────────────────────────────────────────
+
+PART XVIII — BUSINESS TRANSFERS
+
+77. CORPORATE TRANSACTIONS
+
+Information may be transferred in connection with a legitimate:
+
+merger;
+acquisition;
+financing;
+reorganization;
+sale of assets;
+corporate restructuring; or
+similar transaction.
+
+Any successor handling personal information remains subject to applicable law and relevant contractual obligations.
+
+────────────────────────────────────────
+
+PART XIX — LAW-ENFORCEMENT AND LEGAL REQUESTS
+
+78. LEGAL PROCESS
+
+LLRD may disclose information when reasonably believed necessary to:
+
+comply with valid legal process;
+comply with applicable law;
+respond to a court order;
+protect legal rights;
+investigate fraud;
+protect security;
+protect users; or
+respond to lawful governmental requests.
+
+LLRD does not intend to provide unrestricted access to user information merely because a request is made.
+
+Requests should follow applicable legal process.
+
+────────────────────────────────────────
+
+PART XX — CHANGES TO POLICIES
+
+79. UPDATES
+
+LLRD may update these policies as our company, products, technologies, and legal obligations evolve.
+
+The “Last Updated” date will identify the most recent revision.
+
+Where required by law, LLRD will provide additional notice or obtain consent for material changes.
+
+────────────────────────────────────────
+
+PART XXI — PRIVACY RIGHTS REQUEST CENTER
+
+80. AVAILABLE REQUEST TYPES
+
+LLRD provides or will make available a Privacy Request Center through which individuals may submit the following requests where applicable:
+
+Access My Data
+
+Request information about personal information associated with you.
+
+Correct My Data
+
+Request correction of inaccurate personal information.
+
+Delete My Data
+
+Request deletion where legally available.
+
+Download My Data
+
+Request an available portable copy.
+
+Opt Out of Sale
+
+Exercise applicable rights concerning qualifying sales of personal information.
+
+Opt Out of Targeted Advertising
+
+Exercise applicable advertising rights.
+
+Opt Out of Qualifying Profiling
+
+Exercise applicable rights concerning certain profiling.
+
+Withdraw Consent
+
+Withdraw consent where processing depends upon consent and withdrawal is legally available.
+
+Appeal a Privacy Decision
+
+Appeal a qualifying denied request.
+
+Parent/Guardian Request
+
+Exercise applicable rights concerning a child.
+
+Other Privacy Concern
+
+Contact LLRD regarding another privacy issue.
+
+────────────────────────────────────────
+
+PART XXII — CONTACT LLRD
+
+81. GENERAL CONTACT
+
+[FULL LEGAL LLRD COMPANY NAME]
+
+A Tennessee [LLC/CORPORATION]
+
+Principal Address:
+[STREET]
+[CITY], Tennessee [ZIP]
+United States
+
+General: privacy@llrd.ai
+
+Privacy: privacy@llrd.ai
+
+Security: privacy@llrd.ai
+
+Legal/IP: privacy@llrd.ai
+
+Accessibility: privacy@llrd.ai
+
+────────────────────────────────────────
+
+PART XXIII — WEBSITE FOOTER
+
+Every LLRD corporate webpage should contain a persistent footer containing links substantially similar to:
+
+© [YEAR] LLRD. All rights reserved.
+
+Privacy | Terms | Cookies | AI Policy | Security | Accessibility | State Privacy Rights | Legal Center
+
+The footer may additionally display:
+
+LLRD is a Tennessee-based technology company. Product availability and features may vary.
+
+────────────────────────────────────────
+
+PART XXIV — COOKIE BANNER
+
+Where a cookie-consent mechanism is required or voluntarily implemented, recommended first-layer text is:
+
+Your Privacy Choices
+
+LLRD uses essential technologies to operate and secure our website. With your permission, we may also use optional analytics or other technologies to understand and improve our services.
+
+[Accept Optional Cookies] [Reject Optional Cookies] [Manage Preferences]
+
+Essential technologies required for security and basic functionality remain active.
+
+────────────────────────────────────────
+
+PART XXV — CONTACT FORM PRIVACY NOTICE
+
+Place directly below the website's business contact form:
+
+Privacy Notice
+
+Information submitted through this form will be used to respond to your inquiry, provide requested information, maintain appropriate business records, and protect our services. Please do not submit passwords, financial account information, health records, genetic information, government identification numbers, or other highly sensitive information through this general contact form.
+
+[Privacy Policy]
+
+────────────────────────────────────────
+
+PART XXVI — AI FEATURE MICRO-NOTICE
+
+Where an AI assistant appears:
+
+AI Notice
+
+This feature uses artificial intelligence. AI responses may be inaccurate or incomplete and should be independently verified when important. Do not submit information you are not authorized to disclose.
+
+[Learn About LLRD AI]
+
+────────────────────────────────────────
+
+PART XXVII — DEVELOPMENT PRODUCT NOTICE
+
+For unreleased products displayed on LLRD's corporate site:
+
+Product Status: In Development
+
+This product or feature is currently under development. Screens, features, capabilities, integrations, availability, and release plans may change and should not be considered commitments of future functionality.
+
+────────────────────────────────────────
+
+PART XXVIII — CHILD/FAMILY PRODUCT NOTICE
+
+Where an LLRD product allows family participation:
+
+Family Privacy
+
+This service may contain information about family members, including minors. Only provide information you are authorized to submit. Additional protections, permissions, parental controls, and product-specific privacy terms may apply.
+
+[Family Privacy Information]
+
+────────────────────────────────────────
+
+PART XXIX — HEALTH PRODUCT NOTICE
+
+Before any health product launches, display an appropriate notice such as:
+
+Health Information Notice
+
+Health-related features are intended to help users organize, understand, or manage information as described by the applicable product. Unless expressly stated, the service does not provide medical diagnosis or replace a licensed healthcare professional.
+
+Whether particular information is protected by HIPAA depends on the circumstances in which it is collected and processed. Review the product's Health Data Privacy Notice for details.
+
+────────────────────────────────────────
+
+
+────────────────────────────────────────
+
+FINAL LEGAL NOTICE
+
+These policies establish LLRD's general corporate legal and privacy framework.
+
+They should not be interpreted as stating that every possible law identified or contemplated by this framework currently applies to LLRD.
+
+Legal obligations depend upon factors including LLRD's size, activities, products, users, jurisdictions, contractual relationships, categories of information processed, and applicable statutory thresholds.
+
+Product-specific terms, privacy notices, contracts, authorizations, and consent mechanisms may supplement this Legal Center.
+
+© [YEAR] [FULL LEGAL LLRD ENTITY NAME]. All rights reserved.
+
+────────────────────────────────────────
+
+PRE-PUBLICATION ITEMS STILL TO COMPLETE
+Insert the live Privacy Request Center / Your Privacy Choices URL once that webpage is built.
+Register LLRD LLC's DMCA designated agent with the U.S. Copyright Office and keep the designation current. Use: Copyright Agent, LLRD LLC; 1109 Woodland St, Unit 60552, Nashville, TN 37206; 615-397-8434; privacy@llrd.ai.
+Before SONIE production launch, complete the vendor/data-flow inventory and update the Privacy Policy, Cookie Policy, and product-specific disclosures to match the actual production vendors and technologies.
+For SONIE V1, use essential first-party cookies/technologies only by default; do not deploy advertising cookies, cross-site behavioral tracking, or advertising pixels unless the legal package and consent controls are intentionally updated first.
+Complete the Tennessee registered-agent information through the Tennessee Secretary of State as part of LLRD LLC's corporate filing/maintenance. The Tennessee registered agent is separate from the DMCA designated agent.
+Obtain final Tennessee technology/privacy counsel review before public launch, particularly for SONIE's family/minor data and any future Health product.

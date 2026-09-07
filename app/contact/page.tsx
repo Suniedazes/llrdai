@@ -1,0 +1,7 @@
+import {company} from "@/content/company";
+import {ContactInquiry} from "@/components/ContactInquiry";
+import {pageMetadata} from "@/lib/seo";
+import {TrustLink} from "@/components/ui";
+import "./contact.css";
+export const metadata=pageMetadata("Let’s Connect","Website and application development, project leadership, risk management, technology and AI strategy, and partnerships with LLRD Technologies.","/contact");
+export default function Contact(){return <div className="container contact-page"><section className="page-intro contact-intro"><p className="eyebrow">CONTACT LLRD</p><p className="contact-label">LET’S CONNECT</p><h1>Let’s build something<br/><em>that matters.</em></h1><p className="lead">Whether you’re developing a new digital product, modernizing an existing solution, or need experienced leadership to move a complex initiative forward, LLRD Technologies can help.</p><a className="text-link" href="#inquiry">Start a conversation <span aria-hidden="true">↓</span></a></section><section className="contact-support"><div><h2>{company.legalName}</h2><p>{company.address}</p><p><a href="tel:+16153978434">{company.phone}</a></p><p><a href={"mailto:"+company.businessEmail}>{company.businessEmail}</a></p></div></section><ContactInquiry/><aside className="contact-support"><div><p className="eyebrow">PRODUCT SUPPORT</p><h2>Looking for help with an LLRD product?</h2><p>For support with SONIE, ElseSide™, or another LLRD product, visit Product Support.</p></div><TrustLink href="/support">Product Support</TrustLink></aside></div>;}

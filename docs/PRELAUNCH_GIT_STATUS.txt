@@ -1,0 +1,22 @@
+ M .env.example
+ M app/api/contact/route.ts
+ M app/api/discovery/ai/route.ts
+ M app/contact/page.tsx
+ M app/sitemap.ts
+ M components/AIDiscovery.tsx
+ M components/ContactInquiry.tsx
+ M components/LegalCenter.tsx
+ M content/company.ts
+ M content/legal-package.json
+ M content/navigation.ts
+ M lib/contact.ts
+ M tests/ai-discovery.test.ts
+ M tests/contact.test.ts
+ M tests/production-readiness.test.ts
+?? app/privacy-requests/
+?? docs/PRELAUNCH_IMPLEMENTATION.md
+?? docs/VENDOR_DATA_FLOW_INVENTORY.md
+?? docs/WEBSITE_AI_CONTACT.md
+?? lib/inquiry-delivery.ts
+?? lib/website-ai/
+?? tests/privacy-requests.test.ts

@@ -1,0 +1,4 @@
+import Image from "next/image";
+import type {Product} from "@/content/products";
+import {Button} from "./ui";
+export function ProductCard({product:p}:{product:Product}){return <article className="product-showcase" data-product={p.id}><div className="showcase-heading"><p className="eyebrow">{p.category}</p><span className="product-stage">{p.stage??"Coming Soon"}</span></div>{p.logo&&<div className="product-brand-panel"><Image src={p.cardImage??p.heroImage??p.logo} alt={p.name+" brand artwork"} width={1120} height={p.heroImage?970:373} sizes="(max-width:600px) 90vw, 45vw" style={{objectFit:"contain"}}/></div>}<h3 className={p.logo?"visually-hidden":undefined}>{p.name}</h3>{!p.cardImage&&!p.heroImage&&<p className="showcase-tagline">{p.tagline}</p>}<p className="showcase-summary">{p.cardSummary??p.shortDescription}</p><Button href={"/products/"+p.slug} secondary>{p.ctaLabel??"Explore "+p.name}</Button></article>;}

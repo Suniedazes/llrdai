@@ -1,0 +1,5 @@
+import type {Product} from "../content/products";
+import type {Campaign} from "../content/campaigns";
+// Fictional data used only by tests. Never publish this as a real LLRD product.
+export const product:Product={id:"fixture-one",slug:"fixture-one",name:"Test application",tagline:"Fixture only",shortDescription:"A test record.",longDescription:"Used to verify templates without inventing a public product.",category:"Test",webAppUrl:"https://example.com/app",webStatus:"AVAILABLE",iosStatus:"COMING_SOON",androidStatus:"NOT_OFFERED",featured:true,displayOrder:1,campaignLinks:[],waitlistEnabled:false,features:[{title:"Fixture feature",description:"Verification only"}],media:[]};
+export const campaign:Campaign={id:"fixture-campaign",slug:"fixture-campaign",name:"Test campaign",productId:product.id,headline:"Test headline",subheadline:"Test campaign copy",campaignTheme:"earth",ctaType:"PLATFORMS",status:"ACTIVE"};
