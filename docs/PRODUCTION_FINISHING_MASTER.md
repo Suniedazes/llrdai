@@ -1,3 +1,5 @@
+> HISTORICAL REPORT: deployment authorization has been completed. See [FINISHING_DEPLOYMENT_RESULT.md](FINISHING_DEPLOYMENT_RESULT.md) for current status and only the remaining owner actions.
+
 # LLRD production finishing master report — 2026-09-07
 
 ## State and scope
@@ -76,3 +78,4 @@ Found blank embedded SVG SONIE wordmark in discovery; extracted its exact suppli
 
 ## Explicit deployment authorization received
 Owner authorized remaining finishing commits, push to Suniedazes/llrdai main, existing Worker deployment, and controlled fixed-prompt acceptance. Prior push blocker is superseded by this explicit authorization. Public AI/contact/indexing remain OFF. Owner also explicitly requested Find My App publicly disabled; discoveryConfig.enabled and autoPrompt are now false and launch controls are disabled. Existing algorithm and registry remain intact. Microsoft DNS and legal package contents are not changed by this deployment.
+
