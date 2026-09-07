@@ -22,12 +22,12 @@
   "vars": {
     "LLRD_AI_ENABLED": "false",
     "LLRD_AI_PROVIDER": "groq",
-    "LLRD_AI_MODEL": "llama-3.1-8b-instant",
+    "LLRD_AI_MODEL": "openai/gpt-oss-20b",
     "LLRD_AI_FREE_PLAN_CONFIRMED": "true",
     "LLRD_LOCAL_STUDIO": "false",
     "SITE_INDEXABLE": "false",
     "LLRD_AI_TRUSTED_IP_HEADER": "CF-Connecting-IP",
-    "LLRD_AI_ACCEPTANCE_RUN": ""
+    "LLRD_AI_ACCEPTANCE_RUN": "2026-09-gptoss-v1"
   },
   "routes": [
     {
@@ -52,5 +52,6 @@
     }
   ]
 }
+
 
 
