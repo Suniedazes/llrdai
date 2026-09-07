@@ -2,7 +2,7 @@ import {company} from '@/content/company';
 import type {InquiryDelivery} from './inquiry-delivery';
 
 // Server-side only. This adapter never retries an ambiguous send response.
-export function microsoftGraphDelivery(env:NodeJS.ProcessEnv=process.env,request:typeof fetch=fetch):InquiryDelivery|null {
+export function microsoftGraphDelivery(env:Record<string,string|undefined>=process.env,request:typeof fetch=fetch):InquiryDelivery|null {
  const tenant=env.MS_GRAPH_TENANT_ID,client=env.MS_GRAPH_CLIENT_ID,secret=env.MS_GRAPH_CLIENT_SECRET;
  if(env.LLRD_CONTACT_PROVIDER!=='microsoft-graph'||!tenant||!client||!secret)return null;
  if(!/^[a-f0-9-]{36}$/i.test(tenant)||!/^[a-f0-9-]{36}$/i.test(client))return null;
@@ -20,3 +20,4 @@ export function microsoftGraphDelivery(env:NodeJS.ProcessEnv=process.env,request
   return {accepted:true,providerId};
  }};
 }
+
