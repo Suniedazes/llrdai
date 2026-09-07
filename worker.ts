@@ -34,7 +34,7 @@ export class SiteQuota extends DurableObject<Record<string,string>> {
  async alarm(){await this.ctx.storage.transaction(async txn=>{const q=await txn.get<QuotaState>('quota');if(q&&q.day<Math.floor(Date.now()/86400000))await txn.delete('quota');});}
 }
 const worker = {
- async fetch(request:Request,env:{ASSETS:Fetcher;SITE_QUOTA:DurableObjectNamespace<SiteQuota>;LLRD_AI_ENABLED:string;LLRD_AI_TRUSTED_IP_HEADER:string;LLRD_AI_ACCEPTANCE_RUN?:string},ctx:ExecutionContext){
+ async fetch(request:Request,env:{ASSETS:Fetcher;SITE_QUOTA:DurableObjectNamespace<SiteQuota>;LLRD_AI_ENABLED:string;LLRD_AI_TRUSTED_IP_HEADER:string;LLRD_AI_ACCEPTANCE_RUN?:string;SITE_INDEXABLE?:string},ctx:ExecutionContext){
   const url=new URL(request.url);
   // Bounded owner-authorized acceptance suite: fixed public prompts, once only, no visitor input or secret output.
   if(url.pathname==='/api/health/ai-acceptance'&&request.method==='GET'&&env.LLRD_AI_ACCEPTANCE_RUN==='2026-09-finishing-v2'){
@@ -56,9 +56,12 @@ const worker = {
     if(!allowed)return Response.json({message:'Please wait before trying again.'},{status:429,headers:{'Cache-Control':'no-store','Retry-After':'60'}});
    }catch{return Response.json({message:'LLRD’s AI assistant is temporarily unavailable. You can continue exploring our products or contact LLRD for assistance.'},{status:503});}
   }
-  return handler.fetch(request,env,ctx);
+  const response=await handler.fetch(request,env,ctx);
+  if(env.SITE_INDEXABLE!=='true'){const headers=new Headers(response.headers);headers.set('X-Robots-Tag','noindex, nofollow');return new Response(response.body,{status:response.status,statusText:response.statusText,headers});}
+  return response;
  }
 };
 export default worker;
+
 
 
