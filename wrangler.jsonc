@@ -5,7 +5,7 @@
   "compatibility_flags": [
     "nodejs_compat"
   ],
-  "main": "vinext/server/fetch-handler",
+  "main": "worker.ts",
   "assets": {
     "directory": "dist/client",
     "not_found_handling": "none",
@@ -23,14 +23,32 @@
     "LLRD_AI_ENABLED": "false",
     "LLRD_AI_PROVIDER": "groq",
     "LLRD_AI_MODEL": "llama-3.1-8b-instant",
-    "LLRD_AI_FREE_PLAN_CONFIRMED": "false",
+    "LLRD_AI_FREE_PLAN_CONFIRMED": "true",
     "LLRD_LOCAL_STUDIO": "false",
-    "SITE_INDEXABLE": "false"
+    "SITE_INDEXABLE": "false",
+    "LLRD_AI_TRUSTED_IP_HEADER": "CF-Connecting-IP",
+    "LLRD_AI_ACCEPTANCE_RUN": "2026-09-finishing-v1"
   },
   "routes": [
     {
       "pattern": "llrd.ai",
       "custom_domain": true
+    }
+  ],
+  "durable_objects": {
+    "bindings": [
+      {
+        "name": "SITE_QUOTA",
+        "class_name": "SiteQuota"
+      }
+    ]
+  },
+  "migrations": [
+    {
+      "tag": "v1-site-quota",
+      "new_sqlite_classes": [
+        "SiteQuota"
+      ]
     }
   ]
 }

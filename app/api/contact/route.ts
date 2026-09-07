@@ -13,7 +13,7 @@ export async function POST(request:Request){
  // Public collection stays closed; local preview may exercise validation without delivery.
  if(!localHost(request.headers.get("host")??new URL(request.url).host)&&!contactDelivery.collectionEnabled)return reply("Contact collection is not available until delivery and the Privacy Notice are approved.",503);
  if(!limiter.allow("contact:"+clientKey(request),10,60000))return reply("Please wait before trying again.",429);
- if(!request.headers.get("content-type")?.startsWith("application/json"))return reply("Unsupported request format.",415);
+ if(request.headers.get("content-type")?.split(";")[0].trim().toLowerCase()!=="application/json")return reply("Unsupported request format.",415);
  if(Number(request.headers.get("content-length"))>24000)return reply("Your inquiry is too long.",413);
  let text="";const reader=request.body?.getReader();if(!reader)return reply("An inquiry is required.",400);
  const decoder=new TextDecoder();let size=0;
@@ -24,4 +24,3 @@ export async function POST(request:Request){
  if(Object.keys(errors).length)return reply("Please check the highlighted fields.",422,{errors});
  try {const accepted=await deliverInquiry(data,microsoftGraphDelivery());return Response.json(accepted,{headers:{"Cache-Control":"no-store"}});} catch {return reply("Your inquiry has not been sent. Online delivery is currently unavailable. Your entries are still here so you can copy them and try again later.",503); }
 }
-

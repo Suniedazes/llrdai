@@ -1,0 +1,15 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "types": [
+      "node"
+    ]
+  },
+  "include": [
+    "worker.ts",
+    "types/cloudflare.d.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

@@ -1,4 +1,5 @@
 import { defineConfig, globalIgnores } from "eslint/config";
 import nextVitals from "eslint-config-next/core-web-vitals";
 import nextTs from "eslint-config-next/typescript";
-export default defineConfig([...nextVitals, ...nextTs, globalIgnores([".next/**", "dist/**", ".vinext/**", ".wrangler/**", "node_modules/**", "test-results/**"])]);
+export default defineConfig([...nextVitals, ...nextTs, globalIgnores([".next/**", "types/cloudflare.d.ts", "dist/**", ".vinext/**", ".wrangler/**", "node_modules/**", "test-results/**"])]);
+
