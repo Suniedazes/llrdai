@@ -27,7 +27,7 @@
     "LLRD_LOCAL_STUDIO": "false",
     "SITE_INDEXABLE": "false",
     "LLRD_AI_TRUSTED_IP_HEADER": "CF-Connecting-IP",
-    "LLRD_AI_ACCEPTANCE_RUN": "2026-09-finishing-v1"
+    "LLRD_AI_ACCEPTANCE_RUN": "2026-09-finishing-v2"
   },
   "routes": [
     {
@@ -52,3 +52,4 @@
     }
   ]
 }
+
