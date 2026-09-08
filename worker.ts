@@ -76,7 +76,7 @@ const monitoredWorker = {
  ...worker,
  async fetch(request:Request,env:Parameters<typeof worker.fetch>[1],ctx:ExecutionContext){
   const start=Date.now();const path=new URL(request.url).pathname;const kind=path==='/api/contact'?'contact':path==='/api/discovery/ai'?'ai':null;
-  const record=(status:number)=>{if(kind&&request.method==='POST'&&env.OPS_ENABLED==='true')ctx.waitUntil(env.OPERATIONS.getByName('llrd-operations').record({kind,status,ms:Date.now()-start}).catch(()=>{console.warn('operations_metrics_unavailable');}));};
+  const record=(status:number)=>{try{if(kind&&request.method==='POST'&&env.OPS_ENABLED==='true')ctx.waitUntil(env.OPERATIONS.getByName('llrd-operations').record({kind,status,ms:Date.now()-start}).catch(()=>{console.warn('operations_metrics_unavailable');}));}catch{console.warn('operations_metrics_unavailable');}};
   try{const response=await worker.fetch(request,env,ctx);record(response.status);return response;}catch(error){record(500);throw error;}
  }
 };

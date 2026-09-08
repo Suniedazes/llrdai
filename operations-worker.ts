@@ -16,6 +16,13 @@ export class OperationsMonitor extends DurableObject<Record<string,string>> {
   return !!last&&Date.now()-last.at<75*60000&&!last.critical&&(!report?false:report.emailAccepted&&report.level!=='RED'&&Date.now()-Date.parse(report.at)<27*3600000);
  }
  async tick(now=Date.now()){
+  try{await this.runTick(now);}catch{
+   await this.ctx.storage.put('last-run-failure',{at:new Date(now).toISOString(),generated:false,emailAccepted:false,deliveryVerified:'NOT AVAILABLE'});
+   await this.ctx.storage.put('last',{at:now,critical:true});
+   console.warn('operations_run_failed');
+  }
+ }
+ async runTick(now:number){
   if(this.env.OPS_ENABLED!=='true')return;
   const slot=Math.floor(now/1800000);
   const claimed=await this.ctx.storage.transaction(async tx=>{if(await tx.get('slot')===slot)return false;await tx.put('slot',slot);return true;});
