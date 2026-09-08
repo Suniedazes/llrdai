@@ -1,5 +1,5 @@
 export const company = {
- name: "LLRD Technologies", legalName: "LLRD.AI LLC", publicBrand: "LLRD LLC", jurisdiction: "Tennessee, USA", businessEmail: "contactus@llrd.ai", phone: "615-397-8434", address: "1109 Woodland St, Unit 60552, Nashville, TN 37206, United States", domain: "https://llrd.ai",
+ name: "LLRD Technologies", legalName: "LLRD LLC", publicBrand: "LLRD LLC", jurisdiction: "Tennessee, USA", businessEmail: "contactus@llrd.ai", phone: "615-397-8434", address: "1109 Woodland St, Unit 60552, Nashville, TN 37206, United States", domain: "https://llrd.ai",
  tagline: "Technology that connects what matters.",
  intro: "Thoughtful technology. Meaningful connections.",
  description: "We build technology around people, opening possibilities and helping purposeful ideas become practical progress.",
@@ -16,3 +16,4 @@ export const company = {
  {title:"Purposeful progress", text:"Experiences shaped around real needs and meaningful outcomes."}
  ],
 };
+

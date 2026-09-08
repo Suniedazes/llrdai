@@ -10,8 +10,9 @@ test('legal package retains all 81 numbered provisions and supplied dates',()=>{
  assert.equal(legalPackage.updatedDate,'September 7, 2026');
  assert.doesNotMatch(JSON.stringify(legalPackage),/\[(?:URL|STREET|CITY|YEAR|FULL LEGAL|PRIVACY APPEAL|SECURITY)/);
 });
-test('legal routes reference real parts without enabling collection',()=>{
+test('legal routes reference real parts without asserting privacy approval',()=>{
  for(const r of Object.values(legalRoutes))for(const i of r.parts)assert.ok(legalPackage.parts[i]);
- assert.equal(contactDelivery.collectionEnabled,false);
+ assert.equal(contactDelivery.privacyApproved,false);
  assert.ok(legalRoutes.privacy&&legalRoutes.security&&legalRoutes.terms);
 });
+
