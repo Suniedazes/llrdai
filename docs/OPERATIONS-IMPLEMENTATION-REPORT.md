@@ -4,7 +4,7 @@ LLRD OPERATIONS AGENT: PARTIAL — core monitoring deployed; optional account in
 
 | Requested field | Result and boundary |
 |---|---|
-| WEBSITE MONITORING | PASS — 30-minute Cloudflare schedule installed; baseline main pages HTTP 200 |
+| WEBSITE MONITORING | PASS — six-times-daily Cloudflare schedule installed; baseline main pages HTTP 200 |
 | CLOUDFLARE ANALYTICS | OWNER AUTH REQUIRED — read-only adapter prepared; separate account token needed |
 | GOOGLE SEARCH CONSOLE | OWNER AUTH REQUIRED — OAuth aggregate adapter prepared |
 | GOOGLE SITEMAP | NOT SUBMITTED — verified-property access needed |
@@ -26,7 +26,7 @@ DAILY EMAIL REPORT: PARTIAL
 
 RECIPIENT: contactus@llrd.ai
 
-SCHEDULE: daily 08:00 America/Chicago (13:00 UTC CDT / 14:00 UTC CST). The half-hour UTC cron checks local wall time and catches a missed 08:00 run later the same day. Platform delays are possible. One initial installation report is queued for the first scheduled run.
+SCHEDULE: daily 08:00 America/Chicago (13:00 UTC CDT / 14:00 UTC CST). The UTC cron (including 13:00 and 14:00 for the Nashville 08:00 slot) checks local wall time and catches a missed 08:00 run later the same day. Platform delays are possible. One initial installation report is queued for the first scheduled run.
 
 LAST REPORT GENERATED: NOT RUN at completion of deployment verification.
 
@@ -48,7 +48,7 @@ INDEPENDENT FAILURE ALERT: PARTIAL — workflow active; notification delivery ne
 
 ## What runs
 
-Daily: half-hour public health samples, aggregate contact/AI response counts, DNS and model-list checks, credential countdown once a date is supplied, bounded metadata checks, optional authorized search/Cloudflare queries, daily report generation and direct Graph acceptance tracking.
+Daily: six daily public health samples, aggregate contact/AI response counts, DNS and model-list checks, credential countdown once a date is supplied, bounded metadata checks, optional authorized search/Cloudflare queries, daily report generation and direct Graph acceptance tracking.
 
 Weekly: bounded link/anchor/title scan and npm production audit through independent GitHub Actions; seven-day trend view in daily reports.
 

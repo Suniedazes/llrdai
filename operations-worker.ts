@@ -13,7 +13,7 @@ export class OperationsMonitor extends DurableObject<Record<string,string>> {
  async healthy(){
   const last=await this.ctx.storage.get<{at:number;critical:boolean}>('last');
   const report=await this.ctx.storage.get<Report>('latest-report');
-  return !!last&&Date.now()-last.at<75*60000&&!last.critical&&(!report?false:report.emailAccepted&&report.level!=='RED'&&Date.now()-Date.parse(report.at)<27*3600000);
+  return !!last&&Date.now()-last.at<7*3600000&&!last.critical&&(!report?false:report.emailAccepted&&report.level!=='RED'&&Date.now()-Date.parse(report.at)<27*3600000);
  }
  async tick(now=Date.now()){
   try{await this.runTick(now);}catch{

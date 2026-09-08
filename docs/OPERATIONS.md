@@ -4,11 +4,11 @@ This is a monitoring service inside the existing `llrdai` Worker, not a second w
 
 ## Schedule and costs
 
-- Worker Cron: every 30 minutes UTC. Each run checks the current America/Chicago clock.
+- Worker Cron: six times daily at 00:00, 06:00, 12:00, 13:00, 14:00 and 18:00 UTC. Each run checks the current America/Chicago clock.
 - Daily email: first run at/after **08:00 America/Chicago** each local day. Normally 13:00 UTC during CDT, 14:00 UTC during CST. Scheduling can be delayed by the platform; this is not an exact-delivery SLA.
 - One installation report: first scheduled run, protected by a durable one-time ID. A retry cannot duplicate an ambiguous send.
-- GitHub independent watchdog: hourly at :17 UTC; dependency audit Monday 12:43 UTC.
-- No paid service introduced. Same Cloudflare Free Worker, with an additional SQLite Durable Object class in the existing account; usage consumes existing free allowances. No upgrades or automatic paid fallback. The 30-minute health schedule adds approximately 336 public GET requests/day before daily sampling.
+- GitHub independent watchdog: every six hours at :17 UTC; dependency audit Monday 12:43 UTC.
+- No paid service introduced. Same Cloudflare Free Worker, with an additional SQLite Durable Object class in the existing account; usage consumes existing free allowances. No upgrades or automatic paid fallback. The six-run health schedule adds approximately 42 public GET requests/day before daily sampling.
 - GitHub standard runners run only if the repository is public, or the owner explicitly confirms a private-repository free budget with OPS_GITHUB_FREE_BUDGET_CONFIRMED=true. Never set that variable without checking spending controls. GitHub can disable inactive scheduled workflows after 60 days; owner must keep schedules enabled.
 
 ## Data and private reporting
