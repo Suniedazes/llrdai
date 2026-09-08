@@ -20,6 +20,9 @@
   "workers_dev": false,
   "preview_urls": false,
   "vars": {
+    "MS_GRAPH_TENANT_ID": "23f14690-978b-44f2-8172-0e1bddcb0a07",
+    "MS_GRAPH_CLIENT_ID": "ad67dcf8-be35-4e06-8b9e-8115a333e0e1",
+    "LLRD_CONTACT_PROVIDER": "microsoft-graph",
     "LLRD_AI_ENABLED": "false",
     "LLRD_AI_PROVIDER": "groq",
     "LLRD_AI_MODEL": "openai/gpt-oss-20b",
