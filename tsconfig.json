@@ -38,6 +38,8 @@
   "exclude": [
     "node_modules",
     "types/cloudflare.d.ts",
-    "worker.ts"
+    "worker.ts",
+    "operations-worker.ts",
+    "types/operations-env.d.ts"
   ]
 }

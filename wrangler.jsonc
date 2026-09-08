@@ -30,7 +30,10 @@
     "LLRD_LOCAL_STUDIO": "false",
     "SITE_INDEXABLE": "true",
     "LLRD_AI_TRUSTED_IP_HEADER": "CF-Connecting-IP",
-    "LLRD_AI_ACCEPTANCE_RUN": ""
+    "LLRD_AI_ACCEPTANCE_RUN": "",
+    "OPS_ENABLED": "true",
+    "OPS_TIMEZONE": "America/Chicago",
+    "OPS_INITIAL_REPORT_ID": "operations-launch-v1"
   },
   "routes": [
     {
@@ -43,6 +46,10 @@
       {
         "name": "SITE_QUOTA",
         "class_name": "SiteQuota"
+      },
+      {
+        "name": "OPERATIONS",
+        "class_name": "OperationsMonitor"
       }
     ]
   },
@@ -52,10 +59,18 @@
       "new_sqlite_classes": [
         "SiteQuota"
       ]
+    },
+    {
+      "tag": "v2-operations",
+      "new_sqlite_classes": [
+        "OperationsMonitor"
+      ]
     }
-  ]
+  ],
+  "triggers": {
+    "crons": [
+      "*/30 * * * *"
+    ]
+  }
 }
-
-
-
 

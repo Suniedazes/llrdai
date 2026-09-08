@@ -7,7 +7,8 @@
   },
   "include": [
     "worker.ts",
-    "types/cloudflare.d.ts"
+    "types/cloudflare.d.ts",
+    "types/operations-env.d.ts"
   ],
   "exclude": [
     "node_modules"

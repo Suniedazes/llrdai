@@ -1,0 +1,35 @@
+name: LLRD independent operations watchdog
+on:
+  schedule:
+    - cron: '17 * * * *'
+    - cron: '43 12 * * 1'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: llrd-operations-watchdog
+  cancel-in-progress: false
+jobs:
+  health:
+    # Public standard runners are free. Private repositories require an explicit free-budget confirmation.
+    if: github.event.repository.private == false || vars.OPS_GITHUB_FREE_BUDGET_CONFIRMED == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - run: node scripts/operations-check.mjs
+  security:
+    if: (github.event.repository.private == false || vars.OPS_GITHUB_FREE_BUDGET_CONFIRMED == 'true') && (github.event_name == 'workflow_dispatch' || github.event.schedule == '43 12 * * 1')
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - run: node scripts/operations-seo.mjs
+      - name: Weekly dependency audit
+        shell: bash
+        run: |
+          npm audit --omit=dev --audit-level=high

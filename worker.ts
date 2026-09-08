@@ -1,3 +1,5 @@
+import {OperationsMonitor} from './operations-worker';
+export {OperationsMonitor};
 import {configuredProvider} from './lib/website-ai/provider';
 import {answerQuestion} from './lib/website-ai/service';
 import {DurableObject} from 'cloudflare:workers';
@@ -33,9 +35,18 @@ export class SiteQuota extends DurableObject<Record<string,string>> {
  }
  async alarm(){await this.ctx.storage.transaction(async txn=>{const q=await txn.get<QuotaState>('quota');if(q&&q.day<Math.floor(Date.now()/86400000))await txn.delete('quota');});}
 }
+type WebsiteEnv=Omit<OperationsEnv,'SITE_QUOTA'|'OPERATIONS'> & {SITE_QUOTA:DurableObjectNamespace<SiteQuota>;OPERATIONS:DurableObjectNamespace<OperationsMonitor>};
 const worker = {
- async fetch(request:Request,env:{ASSETS:Fetcher;SITE_QUOTA:DurableObjectNamespace<SiteQuota>;LLRD_AI_ENABLED:string;LLRD_AI_TRUSTED_IP_HEADER:string;LLRD_AI_ACCEPTANCE_RUN?:string;SITE_INDEXABLE?:string},ctx:ExecutionContext){
+ async scheduled(_controller:ScheduledController,env:WebsiteEnv,ctx:ExecutionContext){
+  if(env.OPS_ENABLED==='true')ctx.waitUntil(env.OPERATIONS.getByName('llrd-operations').tick());
+ },
+ async fetch(request:Request,env:WebsiteEnv,ctx:ExecutionContext){
   const url=new URL(request.url);
+  if(url.pathname==='/api/health/operations'){
+   // Liveness only, no dashboard, telemetry, configuration, or report content is public.
+   if(request.method!=='GET')return new Response(null,{status:405});
+   try{return new Response(null,{status:await env.OPERATIONS.getByName('llrd-operations').healthy()?204:503,headers:{'Cache-Control':'no-store','X-Robots-Tag':'noindex'}});}catch{return new Response(null,{status:503});}
+  }
   // Bounded owner-authorized acceptance suite: fixed public prompts, once only, no visitor input or secret output.
   if(url.pathname==='/api/health/ai-acceptance'&&request.method==='GET'&&env.LLRD_AI_ACCEPTANCE_RUN==='2026-09-gptoss-v1'){
    const test=env.SITE_QUOTA.getByName('llrd.ai:ai');ctx.waitUntil(test.acceptance());
@@ -61,8 +72,17 @@ const worker = {
   return response;
  }
 };
-export default worker;
+const monitoredWorker = {
+ ...worker,
+ async fetch(request:Request,env:Parameters<typeof worker.fetch>[1],ctx:ExecutionContext){
+  const start=Date.now();const path=new URL(request.url).pathname;const kind=path==='/api/contact'?'contact':path==='/api/discovery/ai'?'ai':null;
+  const record=(status:number)=>{if(kind&&request.method==='POST'&&env.OPS_ENABLED==='true')ctx.waitUntil(env.OPERATIONS.getByName('llrd-operations').record({kind,status,ms:Date.now()-start}).catch(()=>{console.warn('operations_metrics_unavailable');}));};
+  try{const response=await worker.fetch(request,env,ctx);record(response.status);return response;}catch(error){record(500);throw error;}
+ }
+};
 
 
 
 
+
+export default monitoredWorker;
